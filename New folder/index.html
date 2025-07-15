@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride & Roadside Services</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <div id="mainPage" class="container page active">
+        <h1>Ride & Roadside Services</h1>
+
+        <div class="section">
+            <h2>Request a Ride</h2>
+            <div class="map-placeholder">
+                [Map Integration Area]
+                (e.g., Google Maps API or OpenStreetMap here)
+            </div>
+            <div class="input-group">
+                <label for="pickupLocation">Pickup Location:</label>
+                <input type="text" id="pickupLocation" placeholder="Enter pickup address" value="My Current Location">
+            </div>
+            <div class="input-group">
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" placeholder="Enter destination address">
+            </div>
+            <div class="input-group">
+                <label for="rideType">Ride Type:</label>
+                <select id="rideType">
+                    <option value="economy">Economy</option>
+                    <option value="premium">Premium</option>
+                    <option value="luxury">Luxury</option>
+                </select>
+            </div>
+            <button class="btn" onclick="initiateRideRequest()">Request Ride</button>
+        </div>
+
+        <div class="section roadside-services">
+            <h2>Roadside Assistance</h2>
+            <p>Need help on the road? Select a service:</p>
+            <button onclick="initiateRoadsideRequest('Flat Tire')">Flat Tire 🛠️</button>
+            <button onclick="initiateRoadsideRequest('Fuel Delivery')">Fuel Delivery ⛽</button>
+            <button onclick="initiateRoadsideRequest('Battery Jump')">Battery Jump 🔋</button>
+            <button onclick="initiateRoadsideRequest('Towing Service')">Towing Service 🚚</button>
+            <button onclick="initiateRoadsideRequest('Lockout')">Lockout 🔑</button>
+            <button onclick="initiateRoadsideRequest('Other')">Other Service ❓</button>
+        </div>
+
+        <div class="section sos-section">
+            <h2>Emergency?</h2>
+            <button class="btn sos-btn" onclick="requestSos()">SOS - Emergency Assistance</button>
+        </div>
+
+        <div id="statusMessage"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS - Emergency Assistance</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <div id="sosRequestPage" class="page active">
+        <div class="spinner"></div>
+        <h2>SOS - Emergency Assistance!</h2>
+        <p>Sending your current location and emergency request to available responders.</p>
+        <p id="sosDetailsDisplay"></p>
+        <button class="btn-secondary" onclick="cancelRequest()">Cancel Emergency</button>
+        <button class="btn" onclick="goToMainPage()">Return to Home</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
