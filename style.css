@@ -1,15 +1,91 @@
-/* --- CSS STYLES --- */
-body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f7f6;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
-    color: #333;
-}
+       body {
+            font-family: sans-serif; /* Using a generic sans-serif font */
+            background-color: #f0f2f5; /* Light gray background */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure body takes full viewport height */
+            margin: 0; /* Remove default body margin */
+        }
+
+        /* Header Section Styles */
+        header {
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+            padding-top: 1.5rem; /* py-6 equivalent */
+            padding-bottom: 1.5rem; /* py-6 equivalent */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md equivalent */
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.25rem; /* text-4xl equivalent */
+            font-weight: 800; /* font-extrabold equivalent */
+            letter-spacing: 0.05em; /* tracking-wide equivalent */
+            margin: 0 auto; /* Center content */
+            max-width: 100%; /* Ensure responsiveness */
+            padding-left: 1rem; /* px-4 equivalent */
+            padding-right: 1rem; /* px-4 equivalent */
+        }
+
+        /* Main Content Area Styles */
+        main {
+            flex-grow: 1; /* flex-grow equivalent */
+            display: flex;
+            align-items: center; /* items-center equivalent */
+            justify-content: center; /* justify-center equivalent */
+            padding: 1.5rem; /* p-6 equivalent */
+        }
+
+        .button-container {
+            width: 100%; /* w-full equivalent */
+            max-width: 28rem; /* max-w-md equivalent */
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem; /* space-y-6 equivalent */
+        }
+
+        /* Custom button styles */
+        .btn {
+            width: 100%; /* w-full equivalent */
+            max-width: 28rem; /* max-w-sm equivalent */
+            padding: 1rem 1.5rem; /* py-4 px-6 equivalent */
+            border-radius: 0.75rem; /* rounded-xl equivalent */
+            color: #fff; /* text-white equivalent */
+            font-weight: 700; /* font-bold equivalent */
+            font-size: 1.25rem; /* text-xl equivalent */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg equivalent */
+            transition: all 0.3s ease-in-out; /* transition-all duration-300 ease-in-out equivalent */
+            transform: scale(1); /* Initial transform for hover effect */
+            border: none; /* Remove default button border */
+            cursor: pointer; /* Indicate clickable */
+        }
+
+        .btn:hover {
+            transform: scale(1.05); /* hover:scale-105 equivalent */
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* hover:shadow-xl equivalent */
+        }
+
+        .btn-ride {
+            background-color: #3B82F6; /* Blue */
+        }
+        .btn-ride:hover {
+            background-color: #2563EB;
+        }
+        .btn-assistance {
+            background-color: #22C55E; /* Green */
+        }
+        .btn-assistance:hover {
+            background-color: #16A34A;
+        }
+        .btn-sos {
+            background-color: #EF4444; /* Red */
+        }
+        .btn-sos:hover {
+            background-color: #DC2626;
+        } 
+
+        /* --- CSS STYLES --- */
+
 
 .container {
     background-color: #ffffff;
@@ -111,6 +187,7 @@ h1, h2 {
 }
 
 /* SOS Button specific styles */
+
 .sos-section {
     margin-top: 40px;
     padding: 25px;
@@ -124,7 +201,7 @@ h1, h2 {
     color: white;
     font-weight: bold;
     font-size: 20px;
-    padding: 15px 30px;
+    padding: 15px, 30px;
     width: 100%; /* Make it full width in its section */
 }
 
