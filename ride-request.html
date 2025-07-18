@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+ <html>
+
+ <head>
+    
+   <link rel="stylesheet" href="style.css" >
+ </head>
+
+ <body class="flex flex-col">
+    <!-- Header Section -->
+    <header>
+        <h1>RESQ AFRICA</h1>
+    </header> 
+
+    <div id="mainPage" class="container page active">
+        <h1>Ride & Roadside Services</h1>
+
+        <div class="section">
+            <h2>Request a Ride</h2>
+            <div class="map-placeholder">
+                [Map Integration Area]
+                (e.g., Google Maps API or OpenStreetMap here)
+            </div>
+            <div class="input-group">
+                <label for="pickupLocation">Pickup Location:</label>
+                <input type="text" id="pickupLocation" placeholder="Enter pickup address" value="My Current Location">
+            </div>
+            <div class="input-group">
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" placeholder="Enter destination address">
+            </div>
+
+            <button class="btn" onclick="initiateRideRequest()">Request Ride</button> 
+        </div>  
+        
+        <button class="btn" ><a href="index.html">Home Page</a></button> 
+
+ </body> 
+        
+
+ </html>
